@@ -95,8 +95,8 @@ export const useQuranSurahOption = create(
   persist(
     (set) => ({
       displayTafsir: false,
-      displayLatin: false,
-      displayAudio: false,
+      displayLatin: true,
+      displayAudio: true,
       displayTranslate: false,
 
       // Set oldOption ke newOption
