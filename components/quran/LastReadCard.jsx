@@ -21,8 +21,8 @@ export default function LastReadCard() {
         <VerseCard
           verse={lastRead}
           options={{
-            displayLatin: false,
-            displayAudio: false,
+            displayLatin: true,
+            displayAudio: true,
             displayTranslate: true,
             showLastReadButton: false,
           }}
