@@ -3,7 +3,7 @@ import { useState } from 'react'
 
 export default function SurahCard({ surah }) {
   const { number, numberOfVerses, name, revelation, tafsir } = surah
-  const [displayTafsir, setDisplayTafsir] = useState(true)
+  const [displayTafsir, setDisplayTafsir] = useState(false)
 
   return (
     <>
