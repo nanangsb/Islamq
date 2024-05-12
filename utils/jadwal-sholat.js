@@ -52,7 +52,7 @@ const indonesianDate = (time = false, setDate = '') => {
 
   switch (hari) {
     case 0:
-      hari = 'Minggu'
+      hari = 'Ahad'
       break
     case 1:
       hari = 'Senin'
