@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
 export default function BeritaCard({ berita }) {
-  const { link, title, pubDate, description, thumbnail } = berita
+  const { link, title, isoDate, contentSnippet } = berita
   const [img, setImg] = useState(thumbnail)
 
   return (
@@ -21,9 +21,9 @@ export default function BeritaCard({ berita }) {
           </a>
         </h2>
         <p className="mb-3">
-          Dipublikasikan pada {new Date(pubDate).toLocaleDateString()}
+          Dipublikasikan pada {new Date(isoDate).toLocaleDateString()}
         </p>
-        <div dangerouslySetInnerHTML={{ __html: description }} />
+        <div dangerouslySetInnerHTML={{ __html: contentSnippet }} />
       </div>
     </div>
   )
