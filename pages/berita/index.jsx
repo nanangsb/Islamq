@@ -12,7 +12,7 @@ export default function Berita() {
   // Fetch data
   useEffect(() => {
     setLoading(true)
-    fetch('https://api-berita-indonesia.vercel.app/republika/islam/')
+    fetch('https://api-artikel.abusofiya.com/api/muslim/')
       .then((res) => res.json())
       .then(({ data }) => {
         setBerita(data.posts)
